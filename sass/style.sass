@@ -1,0 +1,269 @@
+
+@import variables
+
+
+@import 0-plugins/plugins-dir
+@import 1-bases/bases-dir
+@import 2-layouts/layouts-dir
+@import 3-modules/modules-dir
+
+
+@import 2-layouts/header
+
+@import 2-layouts/banner
+
+.below-banner
+    padding: $section-padding
+    background: #fff
+    .container
+        display: table
+    .text-left
+        width: 35%
+        display: table-cell
+        font-size: 16px
+        vertical-align: middle
+        h2
+            color: $main-color
+        p
+            margin-bottom: 20px
+            color: #999
+    .image-right
+        width: 60%
+        display: table-cell
+        vertical-align:  top
+        padding-left: 300px
+        font-size: 100px
+        color: $main-color
+.btn
+    +button(30px)
+
+
+.testimonial-section
+    padding: $section-padding
+    position: relative
+    .container
+        position: relative
+        z-index: 1111111
+        font-size: 0
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 65%
+        height: 100%
+        background-color: $main-color
+        z-index: 11111
+    .title
+        width: 20%
+        font-size: 20px
+        display: inline-block
+        margin-top: 100px
+        h2
+            display: block
+            color: $main-color
+        &:after
+            content: ''
+            border-bottom: 3px solid $main-color
+            display: block
+            width: 20px
+            margin: 10px 0 0
+        small
+            display: block
+            color: #999
+    .testimonial-wrp
+        width: 80%
+        font-size: 16px
+        display: inline-block !important
+        vertical-align: top
+
+.item
+    background: #fff
+    border-radius: 5px
+    padding: 20px
+    margin-right: 20px
+    .img-holder
+        display: table
+        img
+            display: table-cell
+            width: 50px
+            height: 50px
+            border-radius: 50%
+        h3
+            display: table-cell
+            vertical-align: middle
+            width: 80%
+            padding-left: 20px
+            font-size: 14px
+            font-weight: bold
+            color: $main-color
+    .description
+        font-size: 14px
+        color: #999
+
+.status-section
+    background: url('../images/status.jpg')
+    background-size: cover
+    padding: $section-padding
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to right, transparent -4%, white 50%)
+    .container
+        position: relative
+        z-index: 11111
+        display: table
+    .offset
+        display: table-cell
+        width: 20%
+    .form-wrp
+        display: table-cell
+        width: 30%
+        vertical-align: middle
+        margin-left: 200px
+        border-radius: 5px
+        position: relative
+        background: #fff
+        padding: 20px
+        border-radius: 5px
+        box-shadow: 1px 1px 25px #eee
+        h3
+            margin-bottom: 30px
+            font-size: 16px
+            text-transform: uppercase
+        ul li
+            padding: 10px 0
+            border-top: 1px solid #eee
+            font-size: 14px
+            font-weight: bold
+            &:last-child
+                border-bottom: 1px solid #eee
+            &:after
+                content: ''
+                display: block
+                clear: both
+            .btn
+                font-size: 12px
+                padding: 5px 10px
+                float: right
+        .trans-btn
+            border: 1px solid #999
+            padding: 10px
+            display: block
+            color: #999
+            text-align: center
+            font-size: 14px
+            border-radius: 30px
+            margin: 30px 0 0
+    .title
+        display: table-cell
+        width: 50%
+        vertical-align: middle
+        padding-left: 80px
+        h2
+            display: block
+            color: $main-color
+            font-size: 25px
+            font-weight: 200
+
+.feature-section
+    padding: $section-padding
+    background: #f7f7f7
+    .container
+        font-size: 0
+    .featured
+        width: 33.33%
+        display: inline-block
+        font-size: 16px
+        padding: 10px 20px
+        text-align: center
+        .fa
+            font-size: 40px
+            color: $main-color
+            margin-bottom: 20px
+        h3
+            margin-bottom: 20px
+            font-size: 16px
+            color: #999
+            text-transform: uppercase
+            &:after
+                content: ''
+                display: block
+                width: 10px
+                background-color: #999
+                height: 3px
+                margin: 10px auto
+
+.feature-button .btn
+    display: block
+    width: 150px
+    margin: 30px auto
+    text-align: center
+
+.subscription-section
+    background: #fff
+    .subscription-wrp
+        background: $main-color
+        padding: $section-padding
+        text-align: center
+        .text-holder
+            width: 70%  
+            margin: 0 auto 
+            color: #fff
+            h3
+                font-size: 25px
+                color: #fff
+                font-weight: 200
+            p
+                color: #ccc
+                font-size: 14px 
+                margin-bottom: 20px
+.counter-section
+    padding: $section-padding
+    background: #fff
+    .container
+        font-size: 0
+    .counter
+        text-align: center
+        width: 33.33%
+        display: inline-block
+        padding: 0 20px
+        font-size: 20px
+.counter .fa
+    font-size: 35px
+    width: 100px
+    height: 100px
+    line-height: 100px
+    text-align: center
+    background: $main-color
+    color: #fff
+    border-radius: 50%
+.counter .text-wrp
+    font-size: 16px
+    color: #999
+
+.footer
+    background: #434460
+    padding: $section-padding
+    .container
+        font-size: 0
+    .col
+        width: 25%
+        font-size: 16px
+        display: inline-block
+        vertical-align: top
+        h3
+            color: #fff
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+            margin-bottom: 20px
+        a
+            color: #999
+            text-decoration: none
+
