@@ -20,7 +20,7 @@ $(document).ready(function(){
       },
       // breakpoint from 768 up
       768 : {
-        items: 3
+        items: 1
       }
   }
   });

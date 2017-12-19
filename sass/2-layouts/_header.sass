@@ -114,20 +114,21 @@
     width: 100%
     visibility: visible
 
-@media screen and (max-width:640px)
+@media screen and (max-width:768px)
     .icon
         display: block
         float: right
     .header
         position: relative
-    .main-navigation ul.menu
+    .main-navigation .menu
         position: absolute
         background: #333
-        top: 100%
+        top: 110%
         left: 0
         width: 100%
         opacity: 0
         visibility: hidden
+        z-index: 1
         transition: 0.5s all ease
     .main-navigation ul li
         display: block
@@ -135,7 +136,7 @@
         width: 100%
         float: none
         display: inline-block
-        border: 1px solid #444
     #toggle:checked + .menu
         opacity: 1
         visibility: inherit
+        top: 100%
