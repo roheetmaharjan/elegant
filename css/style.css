@@ -617,4 +617,36 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 12px;
         margin: 0 10px 0 0; }
 
+.header {
+  position: relative; }
+  .header .search-form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: transparent;
+    z-index: 11;
+    width: 100%; }
+    .header .search-form label {
+      margin: 0;
+      float: left;
+      display: block;
+      width: 80%; }
+      .header .search-form label input {
+        outline: none;
+        border: none;
+        padding: 20px 50px;
+        height: 50px;
+        width: 100%; }
+    .header .search-form input[type="submit"] {
+      width: 20%;
+      height: 50px;
+      line-height: 50px;
+      background: red;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      background: #2decc3;
+      color: white; }
+
 /*# sourceMappingURL=style.css.map */
