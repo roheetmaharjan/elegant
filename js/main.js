@@ -2,6 +2,9 @@ $(document).ready(function(){
    $('.icon').click(function(){
       $('.icon').toggleClass('active');
    });
+   $('.header-search').click(function(){
+      $('.search-form').toggleClass('search-open');
+   });
    $(".testimonial-wrp").owlCarousel({
     items: 3,
     slideSpeed: 500,
@@ -23,10 +26,5 @@ $(document).ready(function(){
         items: 1
       }
   }
-  });
-    //Counter
-  $('.number').counterUp({
-    delay: 20,
-    time: 2000
   });
 });

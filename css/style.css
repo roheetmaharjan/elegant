@@ -617,15 +617,24 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 12px;
         margin: 0 10px 0 0; }
 
+.header-search {
+  cursor: pointer; }
+
 .header {
   position: relative; }
   .header .search-form {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 120%;
+    left: 50%;
+    border-radius: 5px;
+    overflow: hidden;
     background: transparent;
-    z-index: 11;
-    width: 100%; }
+    z-index: 1111;
+    width: 70%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all ease; }
     .header .search-form label {
       margin: 0;
       float: left;
@@ -648,5 +657,10 @@ h1, h2, h3, h4, h5, h6 {
       cursor: pointer;
       background: #2decc3;
       color: white; }
+
+.search-form.search-open {
+  top: 100%;
+  opacity: 1;
+  visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,22 @@
 =header-search()
+    .header-search
+        cursor: pointer
     .header
         position: relative
+
         .search-form
             position: absolute
-            top: 100%
-            left: 0
+            top: 120%
+            left: 50%
+            border-radius: 5px
+            overflow: hidden
             background: transparent
-            z-index: 11
-            width: 100%
+            z-index: 1111
+            width: 70%
+            transform: translateX(-50%)
+            opacity: 0
+            visibility: hidden
+            transition: 0.5s all ease
             label
                 margin: 0
                 float: left
@@ -30,3 +39,8 @@
                 cursor: pointer
                 background: $primary-color
                 color: white
+
+    .search-form.search-open
+        top: 100%
+        opacity: 1
+        visibility: visible
